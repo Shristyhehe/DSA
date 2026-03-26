@@ -6,11 +6,11 @@ class Arrays{
         Scanner sc = new Scanner(System.in);
         int size = sc.nextInt();
         String names[] = new String[size];
-         System.out.println("Enter the names in the array");
-        for(int i=0; i<size; i++){
+         System.out.println("Enter the names in the array"); 
+        for(int i=0; i<size; i++){ //entering the names from the user in the array
             names[i] = sc.next();
         }
-        System.out.println("names are : ");
+        System.out.println("names are : "); //printing the names 
         for(int i=0; i<size; i++){
             System.out.println(names[i]);
         }
