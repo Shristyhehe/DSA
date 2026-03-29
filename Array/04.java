@@ -18,7 +18,7 @@ class Arrays{
              System.out.println("Array is not sorted");
              return;
          }
-         prev = curr; // aur curr toh chal he according to arr[i];
+         prev = curr; // aur curr toh chal he according to arr[i]; prev = curr is necessary because you need the previous array value, not just the previous value + 1.
      }
      System.out.println("Array is sorted");
     }
