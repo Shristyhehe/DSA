@@ -25,7 +25,7 @@ class TwoDArrays{
              //cols
              for(int j=0; j<cols; j++){
                  if(num[i][j] == x) {
-                     System.out.println("No found at index: [" + i + "," + j + "]");
+                     System.out.println("No found at index: [" + i + "," + j + "]"); //this is how we print the index in 2d array i=rows, j=cols
                      check = 1; 
                      break;
                  }
