@@ -1,4 +1,4 @@
-//Take an input from the user and print the elements of the array
+//Take an input from the user and print the elements of the array(my first 2d array question)
 import java.util.Scanner;
 class TwoDArrays {
     public static void main(String[] args) {
