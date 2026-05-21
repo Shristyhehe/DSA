@@ -1,3 +1,5 @@
+// whenever we are counting the total digits we need to take out the last digit( n/10)
+
 import java.util.Scanner;
 class Main {
     public static void main(String[] args) {
