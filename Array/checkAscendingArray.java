@@ -29,8 +29,28 @@ public static void main(String args[]){
                 System.out.println("array is sorted");
             }
         }
+// we can do this also 
+        boolean isCheck = true;
+
+for(int i=1; i<arr.length; i++){
+    
+    if(arr[i] < arr[i-1]){
+        isCheck = false;
+        break;
+    }
+}
+
+if(isCheck){
+    System.out.println("array is sorted");
+}
+else{
+    System.out.println("array is not sorted");
+}
 
 
+
+
+        
   // we have a solve a provblem of leetcode also but here sorted and rotated sorted is there(rotated sorted means that last element is comparent with the first element)
     }
 
