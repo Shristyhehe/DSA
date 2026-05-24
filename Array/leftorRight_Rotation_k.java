@@ -31,12 +31,18 @@ class Main {
        
        
        //for right  rotation
-     for(int j=0; j<k; j++){
-         int temp = arr[arr.length-1]
-         for(int i=0; i<arr.length-1; i++){
-             arr[i+1] = arr[i]
-     }
-     arr[0] = temp;
-      }
+     class Solution {
+    public void rotate(int[] nums, int k) {
+
+        for(int r = 0; r < k; r++) {
+
+            int temp = nums[nums.length - 1];
+
+            for(int j = nums.length - 1; j > 0; j--) {
+                nums[j] = nums[j - 1];
+            }
+
+            nums[0] = temp;
+        }
     }
 }
