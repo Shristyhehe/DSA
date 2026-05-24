@@ -1,3 +1,6 @@
+// brute force approach 
+// the optimal approach is REVERSE ALGORITHM
+
 import java.util.Scanner;
 class Main {
     public static void main(String[] args) {
