@@ -26,12 +26,24 @@ class Main{
             arr[i] = sc.nextInt();
         }
         k = k % size;
+      // for left
         // reverse the first k elements
         reverse(arr,0,k-1);
         //reverse the remaining elemnts
         reverse(arr, k, size-1);
         //reversing the whole array
         reverse(arr,0, size-1);
+
+
+      // for right
+      // Step 1
+        reverse(nums, 0, nums.length - 1);
+
+     // Step 2
+    reverse(nums, 0, k - 1);
+
+// Step 3
+reverse(nums, k, nums.length - 1);
         //printing the arrays
         for(int i=0; i<arr.length; i++){
             System.out.print(arr[i] + " ");
