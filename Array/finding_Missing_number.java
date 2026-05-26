@@ -35,7 +35,37 @@ class Main {
     }
 }
 
+//Hashing approach Tc is O(n) and sc is O(n)
+import java.util.Scanner;
 
+class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt(); // size or how many elements
+
+
+        //eg if n = 6 then array size is 5 and array elemnts is 5(0 to 4)
+        int arr[] = new int[n - 1]; 
+       int hash[] = new int[n+1]
+
+        for(int i = 0; i < arr.length; i++){
+            arr[i] = sc.nextInt();
+        }
+        //array ka elemts dal re hashing pe and and jo elements honge woh hash k index pe jaa k 1 value hoga
+      for(int i=0; i<arr.length; i++){
+          hash[arr[i]] = 1;
+      }
+      //aab hum 1 to n tak dekheneg (oth index pe nhi)
+      // if 1 to n pe koi hash index pe 0 except then that is the missing no
+       for(int i=1; i<=n; i++){
+           if(hash[i] == 0){
+               System.out.println(i);
+           }
+       }
+    }
+}
 
 
 //optimal approach 
