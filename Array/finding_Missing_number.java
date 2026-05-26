@@ -1,3 +1,4 @@
+//xor approach(is there which is in notebook hint is given in the question)
 //BRUTE FORCE APPRAOCH
 //Time compplexity O(n2) and space complexity O(1)
 
