@@ -20,7 +20,7 @@ class Main {
 
             boolean matching = false;
 
-            for(int j = 0; j < arr.length; j++){
+            for(int j = 0; j < arr.length; j++){ // if i and j is not true it will traverse all the elemnts of j
 
                 if(i == arr[j]){
                     matching = true;
@@ -28,9 +28,46 @@ class Main {
                 }
             }
 
-            if(matching == false){
+            if(matching == false){  // means i not equals to j then that num is missing
                 System.out.println("Missing number is: " + i);
             }
         }
+    }
+}
+
+
+
+
+//optimal approach 
+//so time complexity is O(n)  and space is O(1)
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt(); // size or how many elements
+
+
+        //eg if n = 6 then array size is 5 and array elemnts is 5(0 to 4)
+        int arr[] = new int[n - 1]; 
+       
+
+        for(int i = 0; i < arr.length; i++){
+            arr[i] = sc.nextInt();
+        }
+
+        int sum1=0;
+        int sum2 =0; 
+        for(int i=1; i<=n; i++){ // 1 to n sum
+            sum1 = sum1 + i;
+        }
+        for(int j =0; j<arr.length; j++){ // sum of n-1 elemnts
+            sum2 = sum2 + arr[j];
+        }
+        // the sum1 - sum 2 will give the missing no
+        int temp = sum1 - sum2; 
+        System.out.println("the missing no is : " + temp);
     }
 }
