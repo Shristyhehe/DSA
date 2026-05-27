@@ -1,3 +1,4 @@
+//brute force(only for positive)
 //time complexity O(n ^ 2); and space is O(1);
 import java.util.Scanner;
 class Main {
