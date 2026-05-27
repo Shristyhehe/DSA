@@ -1,5 +1,5 @@
 // whenever we are counting the total digits we need to take out the last digit( n/10)
-
+// variable declared outside the loop can be accessed both inside and outside then loop
 import java.util.Scanner;
 class Main {
     public static void main(String[] args) {
