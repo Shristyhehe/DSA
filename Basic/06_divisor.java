@@ -59,7 +59,7 @@ class divisor{
         for(int i=1; i*i<=n; i++){
             if (n % i == 0){
                 System.out.print(i + " ");
-                if( i != n/i){
+                if( i != n/i){    //This condition is usually used while printing factors/divisors of a number.
                     System.out.print(n/i + " ");
                 }
             }
