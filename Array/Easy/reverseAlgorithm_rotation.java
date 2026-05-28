@@ -25,7 +25,7 @@ class Main{
         for(int i=0; i<arr.length; i++){
             arr[i] = sc.nextInt();
         }
-        k = k % size;
+        k = k % size; //how many rotations
       // for left
         // reverse the first k elements
         reverse(arr,0,k-1);
