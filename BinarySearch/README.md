@@ -1,1 +1,1 @@
-ALL the binary search probles are here
+ALL the binary search problems are here
