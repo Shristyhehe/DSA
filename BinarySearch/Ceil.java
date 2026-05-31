@@ -8,7 +8,7 @@ class Main {
         while( low <=high){
             int mid = low + (high-low)/2;
             if(arr[mid] >= target){
-                ans = mid;
+                ans = arr[mid]; //depends upon the question what we have to print
                 high = mid - 1;
             }
             else{
