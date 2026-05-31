@@ -1,4 +1,5 @@
-//Floor ->largest element <= target
+//Floor ->largest element <= target if arr[] is 10 20 30 40 60 70 then x = 25 the floor will be the lrgest element which is equal to or less than 25 so 
+//largest element less than or equal to floor = 20 
 import java.util.Scanner;
 class Main {
     public static int Floor(int arr[], int target){
