@@ -63,3 +63,23 @@ class Main {
         System.out.println("the last occurence of element is : " + last);
     }
 }
+
+  or
+
+// creating the fucntion for if lb != element or lb == n
+static int[] firstAndLastOccurrence(int[] arr, int n, int x) {
+    int lb = lowerBound(arr, n, x);
+    if (lb == n || arr[lb] != x){ 
+        return new int[]{-1, -1}; 
+    }
+    int ub = upperBound(arr, n, x);
+    return new int[]{lb, ub - 1}; 
+    
+}
+
+public static void main(String[] args) {
+    int[] ans = firstAndLastOccurrence(arr, arr.length, x); 
+    // because in ans[] the arary will be containing only lb and ub and lb is in first place[0] and ub is in 2nd place[1]
+    
+    System.out.println("First Occurrence: " + ans[0]); 
+    System.out.println("Last Occurrence: " + ans[1]);
