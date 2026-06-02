@@ -4,7 +4,7 @@ class Main {
     public static int minimumElement(int arr[], int n) {
         int low =0;
         int high = n-1;
-        int ans = n;
+        int ans = Integer.MIN_VALUE;
         while(low <=high){
             int mid = low + (high - low)/2;
             //if the array is sorted
