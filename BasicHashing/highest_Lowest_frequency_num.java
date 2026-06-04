@@ -1,4 +1,5 @@
 //Highest and lowest Frequency num
+//The frequency of an element is the number of times it occurs in an array.
 import java.util.*;
 class Main {
     public static void main(String[] args) {
