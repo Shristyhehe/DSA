@@ -9,7 +9,7 @@ class Main {
        String s = sc.next(); 
        int hash[] = new int[26];
         for(int i=0; i<s.length();i++){
-           hash[s.charAt(i) - 'a']++;
+           hash[s.charAt(i) - 'a']++; // hash needs index 
         }
         // because in hashing using array we need the max no to create the hash
         for(int i=0; i<hash.length; i++){
