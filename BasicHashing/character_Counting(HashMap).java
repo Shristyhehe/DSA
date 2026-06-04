@@ -7,7 +7,7 @@ class Main {
        
         HashMap<Character, Integer> map = new HashMap<>();
         for(int i=0; i<s.length(); i++){
-            char ch = s.charAt(i); // because java treats char  as string 
+            char ch = s.charAt(i); // because hashmap needs key or num to store wherease hash needs index so it can store the element 
             map.put(ch, map.getOrDefault(ch, 0) + 1);
         }
        /* HashMap.Entry<K, V> is used to represent one key-value pair in a HashMap.
