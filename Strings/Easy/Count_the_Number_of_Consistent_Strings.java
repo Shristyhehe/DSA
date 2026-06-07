@@ -1,3 +1,5 @@
+// check notebook for the understanding
+tc is O(n * m) and sc is O(1)
 class Solution {
     public int countConsistentStrings(String allowed, String[] words) {
         HashSet<Character> set = new HashSet<>();
