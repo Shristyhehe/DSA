@@ -26,6 +26,7 @@ class Main {
            /* freq == 0 → counts match.
                freq > 0 → s has more of that character.
                freq < 0 → t has more of that character.*/
+           // For each value in the map, put that value into freq and check it.
             for(int freq : map.value()){
                 if(freq != 0){
                     return false;
