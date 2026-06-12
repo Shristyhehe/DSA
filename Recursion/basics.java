@@ -9,7 +9,7 @@ recursion -> when a function call itself
       return;
     }
     System.out.print(count);
-    recursion(count+1);
+    recursion(count+1);  // here we are passing count++;
   }
   public static void main(String args[]){
     int count = 0;
