@@ -1,0 +1,90 @@
+// tc is O(n) because we are accessing till s.length and sc is O(1) no extra map array or set is used 
+
+class Solution {
+public int maxVowels(String s, int k){
+int count = 0;
+ /*Step 1: Count vowels in the first window
+         s = "abciiidef", k = 3
+         First window = "abc"*/
+for(int i=0; i<k; i++){
+char ch = s.charAt(i);
+if(ch =='a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u'){
+count++;
+}
+}
+  // count = 1 because "abc" has only one vowel ('a')
+int maxVow = count;
+int left = 0;
+
+
+        // right starts from the first character
+        // outside the first window
+        // right = 3 -> 'i'
+
+
+for(int right=0; right<s.length(); right++){
+
+
+ // ----------------------------------
+            // WINDOW: abc
+            // left = 0 ('a')
+            // right = 3 ('i')
+            // ----------------------------------
+
+            // Character leaving the window
+
+
+ // 'a' is leaving
+
+
+ char leaving = s.charAt(left);
+if(leaving == 'a' || leaving == 'e' || leaving == 'i' || leaving == 'o' || leaving == 'u'){
+count--;    // count: 1 -> 0
+}
+// Move left
+left++;
+
+ // Character entering the window
+
+ // 'i' enters
+
+char entering = s.charAt(right);
+if(entering == 'a' || entering == 'e' || entering == 'i' || entering == 'o' || entering == 'u'){
+count++;    // count: 0 -> 1
+}
+
+ // New window = "bci"
+            // count = 1
+
+maxVow = Math.max(maxVow, count);
+}
+return maxVow;
+}
+}
+
+
+
+
+
+
+ // ----------------------------------
+            // Next iteration
+            // Window = "cii"
+            // 'b' leaves -> not vowel
+            // 'i' enters -> count becomes 2
+            // maxVow = 2
+            // ----------------------------------
+
+            // Next iteration
+            // Window = "iii"
+            // 'c' leaves -> not vowel
+            // 'i' enters -> count becomes 3
+            // maxVow = 3
+            // ----------------------------------
+
+            // Next iteration
+            // Window = "iid"
+            // 'i' leaves -> count 3 -> 2
+            // 'd' enters -> no change
+            // count = 2
+            // ----
