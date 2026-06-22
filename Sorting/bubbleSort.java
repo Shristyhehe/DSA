@@ -16,5 +16,5 @@ class Main {
     
     
     //same time complexity O(n square)
-  and here sc is O(n)
+  and here sc is O(n)  (because of the recursive call stack)
 
