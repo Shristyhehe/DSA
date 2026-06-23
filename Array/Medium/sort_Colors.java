@@ -4,7 +4,7 @@ in counting we count the 0 1 and 2 and put it into the array
 the optimal approach is Dutch National Flag Algorithm.
 
 
-// Dutch National Flag Algorithm
+//Dutch National Flag Algorithm
 // 0s -> left side
 // 1s -> middle
 // 2s -> right side
