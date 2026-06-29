@@ -16,7 +16,7 @@ class Main {
             if(!map.containsKey(ch)){
                 return false;
             }
-            map.put(ch, map.get(ch) - 1){
+            map.put(ch, map.get(ch) - 1);
                 if(map.get(ch) < 0){
                     return false;
                 }
@@ -27,7 +27,7 @@ class Main {
                freq > 0 → s has more of that character.
                freq < 0 → t has more of that character.*/
            // For each value in the map, put that value into freq and check it.
-            for(int freq : map.value()){
+            for(int freq : map.values()){
                 if(freq != 0){
                     return false;
                 }
