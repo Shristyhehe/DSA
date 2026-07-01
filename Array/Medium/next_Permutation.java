@@ -28,6 +28,7 @@ so reverse the entire array.*/
       start++;
       end--;
     }
+    return;
   }
 
       /*Start from the end and find the first element
