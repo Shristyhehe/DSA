@@ -13,6 +13,7 @@ class Solution {
           // converting the start ch into lowercase similarly for end
             char ch = Character.toLowerCase(s.charAt(start));
             char sh = Character.toLowerCase(s.charAt(end));
+        }
           //if the ch is not alphabteic then start++ and ch will contain small letter and start < end
             while(!Character.isLetterOrDigit(ch) && start < end){
                 start++;
