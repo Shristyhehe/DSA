@@ -1,4 +1,17 @@
-tc is O(M X N) and sc is O(1);
+NOTES->/* matrix[i][0] -> Row Marker
+matrix[0][j] -> Column Marker
+
+matrix[0][0] is ambiguous
+(it belongs to both row 0 and column 0)
+
+col0 stores:
+Should column 0 become zero?
+
+Bottom-right traversal prevents
+markers from getting overwritten.
+
+TC = O(M × N)
+SC = O(1) */
 
 class Solution {
 
