@@ -1,3 +1,5 @@
+
+/*this is not the optimized solution*/ -> bucket algo it is
 //tc is O(n) and sc is O(1) page 8 of string to understan this problem and you need knowlegde of array lista and collections method 
 import java.util.*;
 class Main {
